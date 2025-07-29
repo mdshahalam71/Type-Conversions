@@ -21,3 +21,8 @@
 
  console.log(+true);   //1
  console.log(+"");     //0
+
+ let x = 2*2+1;
+ console.log(x);  //5
+
+ 
