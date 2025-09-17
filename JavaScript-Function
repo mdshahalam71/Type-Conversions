@@ -20,3 +20,35 @@
 //     return a+b;
 //  }
 //  console.log(add2(12,8));
+
+//5.....Immediately Invoked Function Expressin(IIFE)
+(function(){
+   console.log("This runs immediatly!")
+})(2000);
+
+// 6....Callback functions
+
+function num(n,callback){
+   return callback(n);
+}
+const double=(n)=>n*2;
+console.log(num(8,double));  //16
+
+// 7....Constructor Function......
+function person(name,age){
+   this.name=name;
+   this.age=age;
+}
+
+const user=new person("Neha",22);
+console.log(user.name); //Neha
+console.log(user.age); //22
+
+// 8.Async function
+
+async function fetchdata(){
+   return "Data fetched!";
+}
+fetchdata()
+.then(console.log);
+
